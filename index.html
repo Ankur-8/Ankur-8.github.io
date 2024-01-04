@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Ankur Bhardwaj</title>
+	<!--Font Awesome CSS-->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+		
+</head>
+
+<body ng-app="myApp">
+<div>
+	<!--Intro -->
+	<div class='intro'>
+		<div>Hello, I am</div>
+		<h1 class='name upper-text'>Ankur Bhardwaj</h1>
+		<br>
+		<form method="get" action="./Assets/resume.pdf" target="_blank">
+			<input type='submit' value='Resume' class='resume'>
+		</form>
+	</div>
+
+	<!--About me-->
+	<div class='about-me box-shadow' ng-controller='personal-info'>
+		<div class='header upper-text'> Lil' about me </div>
+		<div class='row'>
+			<div class='col-md-4'>
+				<h3>Who am I</h3><br>
+				<p class='text'>I am a Computer Science Junior, studying at University of British Columbia with expected graduation of 2025. I have a knack for making new things. Love to work on Personal projects, thinking of startup ideas, and going to Hackathons. If you wanna collaborate, or just have a question, hmu. My contact details are at the end of the page.
+				</p>
+			</div>
+			<div class='col-md-4'>
+				<p>
+					<img src="./Assets/rit.png" class='img-circle' />
+				</p>
+			</div>
+			<div class='col-md-4'>
+				<h3>Details</h3><br>
+				<p>
+					<strong>Name:</strong><br>
+					Ankur Bhardwaj<br><br>
+					<strong>Age:</strong><br>
+					{{getAge()}} years<br><br>
+					<strong>Location:</strong><br>
+					Earth
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Projects-->
+	<div class='projects-splash' ng-controller='projects'>
+		<h1>Projects</h1><br><br>
+		<div class='flex-container'>
+			<div ng-repeat='app in application'>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<div ng-click='toggle($index)' class='flex-item margin-auto box-shadow-img box-properties'>
+						<img class='project-img' src='{{app.img}}'>
+						<div class='img-text'>
+							{{app.name}}
+						</div>
+					</div>
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal-view" ng-show='app.mouseover'>
+					<div class='close-modal' ng-click='close($index)'></div>
+					<span class="close" ng-click='close($index)'>&times;</span>
+					<br>
+					<h2>{{app.name}}</h2>
+					<a href="{{app.link}}" target="_blank">
+						<img src='{{app.img}}' class='modal-img'>
+					</a>
+				    <!-- Modal content -->
+				    <div class="modal-contents">
+				  		{{app.info}}
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Contact-->
+	<br>
+	<div class='contact-div'>
+		<div class='contact-title'> Contact Me</div>
+		<div class='row text-left'>
+			<div class='col-md-8'>
+				<a href="mailto:ankurb75@gmail.com">
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					ankurb75@gmail.com
+				</a>
+			</div>
+			<div class='col-md-4'>
+				<a href='https://www.linkedin.com/in/ankurb75/'>	
+					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					LinkedIn
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+</body>
+
+</html>
