@@ -10,25 +10,25 @@ app.controller("projects", function($scope) {
 			link: 'https://youtu.be/ZKsdiXBnN_M'    	
     	},
     	{
-    		name: 'NYC-Airbnb-Regression-Analysis',
+    		name: 'NYC Airbnb Regression Analysis',
     		img: './Assets/airbnb.png',
     		info: 'A statistical project where I conducted thorough analysis of Airbnb listings in New York City. Firstly, I performed exploratory data analysis to to obtain useful variables and their necessary transformations. Furthermore, I trained multiple regression models on our data using exhaustive search method. Finally, I validated the model using two-fold cross-validation.',
     		mouseover: false,
 			link: 'https://github.com/kashish1928/NYC-Airbnb-Regression-Analysis'
     	},
     	{
-    		name: 'Glass Half Empty',
-    		img: './Assets/glasshalfempty.jpg',
-    		info: 'GlassHalfEmpty is an app that sends you an SMS alert when your bottle/glass is full. It also tells you the percentage of contamination of your water, if it gets dangerously high. The best part is that the use of this app is not only restricted to small glasses, bottles or cups.',
+    		name: 'Fitness Tracker App',
+    		img: './Assets/fittrackapp.png',
+    		info: 'Fitness Tracker App is a fully finctional GUI app using basic Java libraries and Swing. It allows the users to store and view various aspects of their jogs. Additionally, it also includes an event log feature which tracks all features used by the user for an improved user experience.',
 			mouseover: false,
-			link: 'https://devpost.com/software/glass-half-empty'    	
+			link: 'https://github.com/Ankur-8/FitnessTrackerApp'    	
     	},
     	{
-    		name: 'Sinless',
-    		img: './Assets/sinless.jpg',
-    		info: 'Makes you a better person by punishing you when not doing well, rewarding otherwise. So, first of all, you have to pledge a particular amount to the app. After that, if you do something rewarding, the app would automatically send some of your money back to you. But if you do something punishable or if you are unable to complete the task you set for yourself, more money will be deducted from your account. Now, how cool is that?',
+    		name: 'Greenest City Project - A Statistical Inference',
+    		img: './Assets/greencityimg.png',
+    		info: 'A statistical project based on the Vancouver\'s Greenest City Action Plan (GCAP). The aim of the analysis is to select the most influential factors to improve the city\'s sustainability. I conducted a hypothesis test at 5% significance level to obtain a conclusion and proposed a future plan for the city to improve its sustainability.',
     		mouseover: false,
-			link: 'https://devpost.com/software/sinless'
+			link: 'https://github.com/ayushtvora/stat-201-project'
     	},
     	{
     		name: 'Counsl.me',
