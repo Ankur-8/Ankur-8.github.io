@@ -58,7 +58,7 @@ app.controller("projects", function($scope) {
 
 	$scope.getAge = function() {
 		console.log("IN DATE")
-		var birthday = new Date(1998, 9, 20);
+		var birthday = new Date(2003, 2, 8);
 		var currDate = new Date();
 		var diff = birthday.getTime() - currDate.getTime();
    		return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
@@ -69,7 +69,7 @@ app.controller("projects", function($scope) {
 app.controller("personal-info", function($scope) {
 
 	$scope.getAge = function() {
-		var birthday = new Date(1998, 9, 20);
+		var birthday = new Date(2003, 2, 8);
 		var currDate = new Date();
 		var diff = currDate.getTime() - birthday.getTime();
    		return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
