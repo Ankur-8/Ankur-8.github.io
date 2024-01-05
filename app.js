@@ -3,18 +3,18 @@ var app = angular.module("myApp", []);
 app.controller("projects", function($scope) {
     $scope.application = [
     	{
-    		name: 'ItineratR',
-    		img: './Assets/itineratr.jpg',
-    		info: 'IteneratR takes in your budget, travel dates, and your departing location, and then using machine learning algorithms it generates a list of cool places you would be able to visit in that budget (all expenses included). Then, when you select a place, it will display an automatically generated Itinerary. This itinerary would include everything from your meals to the the points of interests in that area.',
+    		name: 'CampusCapture',
+    		img: './Assets/campuscapture.png',
+    		info: 'Campus Capture allows the user to find the necessary information by applying multiple conditions on the campus data. User can add and manipulate large datasets through asynchronous function calls. This interface allows users to gain information such as grade booster courses, best professors and low fail rate courses.',
 			mouseover: false,
-			link: 'https://devpost.com/software/itenaratr'    	
+			link: 'https://youtu.be/ZKsdiXBnN_M'    	
     	},
     	{
-    		name: 'Celeb Finder',
-    		img: './Assets/celebfinder.jpg',
-    		info: 'CelebFinder easily spots and recoginzes the celebrities on your webpage just by facial recognition. It even pulls up an introduction about the person.',
+    		name: 'NYC-Airbnb-Regression-Analysis',
+    		img: './Assets/airbnb.png',
+    		info: 'A statistical project where I conducted thorough analysis of Airbnb listings in New York City. Firstly, I performed exploratory data analysis to to obtain useful variables and their necessary transformations. Furthermore, I trained multiple regression models on our data using exhaustive search method. Finally, I validated the model using two-fold cross-validation.',
     		mouseover: false,
-			link: 'https://devpost.com/software/celebfinder'
+			link: 'https://github.com/kashish1928/NYC-Airbnb-Regression-Analysis'
     	},
     	{
     		name: 'Glass Half Empty',
