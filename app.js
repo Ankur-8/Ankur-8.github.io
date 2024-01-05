@@ -31,11 +31,11 @@ app.controller("projects", function($scope) {
 			link: 'https://github.com/ayushtvora/stat-201-project'
     	},
     	{
-    		name: 'Counsl.me',
-    		img: './Assets/counslme.jpg',
-    		info: 'This web app allows people to communicate in real time with professionals from everywhere in the world and get people the help they need!',
+    		name: 'Library Database Management System',
+    		img: './Assets/libdatabaseimg.jpeg',
+    		info: 'The Library Database Management System allows a library to keep track of its books as well as help with other services such as issuing and returning of a book. It uses MySQL to create a database to store the library data and accessed the books database using python libraries and performed the necessary operations. Furthermore, it also supports multiple user accounts.',
     		mouseover: false,
-			link: 'https://devpost.com/software/counslr-me'
+			link: 'https://github.com/Ankur-8/LibraryDatabaseManagementSystem'
     	},
     	{
     		name: 'VGrep',
