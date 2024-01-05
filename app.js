@@ -38,11 +38,11 @@ app.controller("projects", function($scope) {
 			link: 'https://github.com/Ankur-8/LibraryDatabaseManagementSystem'
     	},
     	{
-    		name: 'VGrep',
-    		img: './Assets/vgrep.jpg',
-    		info: 'vgrep is an astonishingly easy to use Android application that provides you with notes to accompany your video lecture. You can also skip to parts of the video you want to rewatch by clicking the respective note segment. This way you don\'t have to watch the whole video again or struggle finding the parts you want to relearn - vgrep saves you the hassle!',
+    		name: 'K-NN Classification Model',
+    		img: './Assets/knnimg.png',
+    		info: 'The k-Nearest Neighbors (K-NN) classification model is a powerful and intuitive machine learning algorithm designed for pattern recognition and classification tasks. It is a non-parametric, lazy learning algorithm that classifies data points based on their proximity to neighboring data points in the feature space. This model is widely used for its simplicity, versatility, and effectiveness in various domains, including image recognition, text classification, and medical diagnosis.',
     		mouseover: false,
-			link: 'https://devpost.com/software/vgrep'
+			link: 'https://github.com/Ankur-8/DSCI-group-project'
     	}
     ];
 
